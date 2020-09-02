@@ -1,7 +1,8 @@
 .wrapper{
-  display:flex;
+  display: flex;
 }
 
+/* ========= side-bar ========= */
 .sidebar{
   width: 300px;
   height: 100vh;
@@ -10,13 +11,39 @@
   background-color: #253141;
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+.header-name a{
+  color: #fafafa;
+  font-size: 16px;
+  text-decoration: none;
+}
+.create-room a{
+  color: deepskyblue;
+  font-size: 10px;
+  padding: 14px;
+  border: solid 1px lightblue;
+  text-decoration: none;
+}
+
 .rooms{
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
+}
+.room{
+  padding:20px 0px 40px;
+  }
+
+.room-name a{
+  color:white;
+  text-decoration: none;
 }
 
+/* ========= mainchat ========= */
 .mainchat{
   width: calc(100% - 300px);
 }
